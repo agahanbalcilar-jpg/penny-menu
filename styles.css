@@ -6,10 +6,10 @@
   --muted: rgba(255,255,255,.65);
   --border: rgba(255,255,255,.10);
 
-  --grad1: #06b6d4;  /* cyan */
-  --grad2: #a78bfa;  /* violet */
-  --grad3: #fb7185;  /* rose */
-  --accent: #22c55e; /* green */
+  --grad1: #06b6d4;
+  --grad2: #a78bfa;
+  --grad3: #fb7185;
+  --accent: #22c55e;
 }
 
 [data-theme="light"]{
