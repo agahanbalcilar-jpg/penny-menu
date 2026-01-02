@@ -1,111 +1,6 @@
 // You can edit/add items here later.
 window.MENU = [
   {
-    id: "sise-bira",
-    titleTR: "Şişe Bira",
-    titleEN: "Bottled Beer",
-    items: [
-      { name: "Belfast", size: "50cl", price: 285 },
-      { name: "Budweiser", size: "33cl", price: 390 },
-      { name: "Bomonti Filtresiz", size: "50cl", price: 290 },
-      { name: "Duvel", size: "33cl", price: 575 },
-      { name: "Efes Pilsen", size: "33cl", price: 220 },
-      { name: "Efes Green", size: "50cl", price: 285 },
-      { name: "Efes Malt", size: "50cl", price: 260 },
-      { name: "Gara Guzu Summer IPA", size: "33cl", price: 410 },
-      { name: "Erdinger", size: "33cl", price: 380 },
-      { name: "Efes Glutensiz", size: "50cl", price: 310 },
-      { name: "Gara Guzu Blonde Ale", size: "33cl", price: 410 },
-      { name: "Gara Guzu Amber Ale", size: "33cl", price: 410 },
-      { name: "Gara Guzu IPA 4C", size: "33cl", price: 410 },
-      { name: "Gara Guzu Red Ale", size: "33cl", price: 410 },
-      { name: "Gara Guzu Porter", size: "33cl", price: 410 },
-      { name: "Gara Guzu Karlı Kayın Ormanı", size: "33cl", price: 410 },
-      { name: "Gara Guzu Mayhoş", size: "33cl", price: 410 },
-      { name: "Gara Guzu Weiss Bier", size: "33cl", price: 410 },
-      { name: "Bagaj Degaj Bon Voyaj", size: "33cl", price: 400 },
-      { name: "Hoegaarden", size: "33cl", price: 390 },
-      { name: "Heineken", size: "33cl", price: 340 },
-      { name: "Das Dies'ale", size: "33cl", price: 390 },
-      { name: "Kubau Pale Ale", price: 400 },
-      { name: "Kubau More Than Gold IPA", price: 400 },
-      { name: "Strongbow (Apple cider)", size: "33cl", price: 450 },
-      { name: "Asante Brewery Cold IPA", price: 400 },
-      { name: "Asante Brewery New Zealand Pilsner", price: 400 },
-      { name: "Asante Brewery Vienna Lager", price: 400, available: false },
-      { name: "Stella Artois", size: "44cl", price: 275 },
-      { name: "Paulener Salvator", price: 420 },
-    ]
-  },
-
-  {
-    id: "penny-signature",
-    titleTR: "Penny Signature",
-    titleEN: "Signature Cocktails",
-    items: [
-      { name: "Strawberry Collins", price: 580, desc: "Malfy cin, çilek, soda, nane" },
-      { name: "London Refresher", price: 580, desc: "Malfy cin, salatalık, fesleğen, taze sıkılmış limon suyu, ev yapımı şeker şurubu" },
-      { name: "Chopper", price: 580, available: false, desc: "Çilek veya karpuz, fesleğen, limon suyu, Absolut votka" },
-      { name: "Berry B. Goode", price: 580, desc: "Wiser's Canadian whiskey, Jameson Black Barrel, böğürtlen, limon, nane, aquafaba" },
-      { name: "Southside Sour", price: 700, desc: "Hendrick's cin, taze sıkılmış lime suyu, aquafaba, ev yapımı şeker şurubu, nane" },
-      { name: "Smells Like Tropic Spirit", price: 580, desc: "Olmeca Altos, Malibu, Reyhan, taze sıkılmış limon suyu, ev yapımı şeker şurubu, aquafaba" },
-      { name: "Green Child O'Mine", price: 580, available: false, desc: "Chivas Regal Extra Smoky, Garrone Triple Sec, taze sıkılmış nar suyu, taze sıkılmış limon suyu, ev yapımı şeker şurubu, fesleğen kreması" },
-    ]
-  },
-
-  {
-    id: "doyuranlar",
-    titleTR: "Doyuranlar",
-    titleEN: "Mains",
-    items: [
-      { name: "Penny Burger", price: 520, desc: "Ev yapımı burger ekmeğine 150gr burger köftesi, karamelize soğan, burger sos, cheddar sos, domates, göbek marul ve bravas ile" },
-      { name: "Jameson Burger", price: 550, desc: "Ev yapımı tereyağlı burger ekmeğine 150gr katkısız burger köftesi, ızgara füme et, karamelize soğan, viski sos, alman turşusu, domates, göbek marul ve bravas ile" },
-      { name: "Fish & Chips", price: 550, desc: "Mezgit, salsa ve tartar sos, roka, lahana turşusu ve patates bravas ile" },
-      { name: "Zerdeçallı Tavuk", price: 450, desc: "Zerdeçal ve bal ile marine edilmiş tavuk göğsü, patates püresi ve mevsim salata ile" },
-      { name: "Kasap Köfte", price: 500, desc: "Acı sos, kahvaltılık patates kızartması, turşu, ızgara biber ve domates ile" },
-      { name: "Baharatlı Sosis", price: 550, desc: "Burger sos, cheddar, karamelize soğan ve bravas ile" },
-      { name: "Sloppy Joe", price: 450, desc: "İzci burger" },
-    ]
-  },
-
-  {
-    id: "elle-ye",
-    titleTR: "Elle Ye!",
-    titleEN: "Handheld",
-    items: [
-      { name: "Cheese Steak Sandwich", price: 520, desc: "Sebze ile sotelenmiş dana eti, cheddar sos ve bravas ile" },
-      { name: "Dana Etli Burrito", price: 500, desc: "Dana eti, sebze, iceberg, cheddar sos ve bravas ile" },
-      { name: "Tavuk Sandviç", price: 450, desc: "Izgara tavuk göğüs, karamelize soğan, göbek marul ve bravas ile" },
-      { name: "Çıtır Tavuk", price: 400, desc: "Panelenmiş tavuk, tartar ve salsa sos ile" },
-    ]
-  },
-
-  {
-    id: "makarnalar",
-    titleTR: "Makarnalar",
-    titleEN: "Pasta & Noodles",
-    items: [
-      { name: "Pad Thai Sebzeli", price: 500, desc: "Uzak doğu usulü pirinç eriştesi, lahana, havuç, taze soğan, soya filizi, soya sosu ve oyster sos ile" },
-      { name: "Pad Thai Tavuklu", price: 550, desc: "Uzak doğu usulü pirinç eriştesi, lahana, havuç, taze soğan, soya filizi, tavuk, soya sosu ve oyster sos ile" },
-      { name: "Penne Arabiata", price: 400, desc: "Acılı domates sos, dilim zeytin ve parmesan ile" },
-      { name: "Fettucini Alfredo", price: 475, desc: "Tavuk, mantar, fesleğen, parmesan peyniri ve beyaz şaraplı kremalı sos ile" },
-      { name: "Pad Thai Karidesli", price: 600, desc: "Uzak doğu usulü pirinç eriştesi, lahana, havuç, taze soğan, soya filizi, karides, soya sosu ve oyster sos ile" },
-    ]
-  },
-
-  {
-    id: "salatalar",
-    titleTR: "Salatalar",
-    titleEN: "Salads",
-    items: [
-      { name: "Sezar Salata", price: 350, desc: "Tavuk bonfile, iceberg, parmesan, kruton ekmek, sezar sos ile" },
-      { name: "Etli Salata", price: 480, desc: "Maskolin, kuru domates, kruton ekmek, parmesan, kremalı ve hardal soslu kontrfile et, vinaigrette sos ile" },
-      { name: "Roka Salatası", price: 320, available: false, desc: "Roka, ceviz, nar, köz kapya, çeri domates, nar ekşisi ve zeytinyağı ile" },
-      { name: "Tahıl Salata", price: 400, desc: "Börülce, nohut, yarma, firik bulgur, maş fasulyesi, domates, taze baharatlar, nar ekşisi ve zeytinyağı ile" },
-    ]
-  },
-
-  {
     id: "tapas",
     titleTR: "Tapas",
     titleEN: "Tapas",
@@ -121,13 +16,15 @@ window.MENU = [
       { name: "Humus Roll (isteğe göre vegan)", price: 380, available: false, desc: "Tortillaya sarılı humus, turşu, domates. Üzerine füme kaburga ve roka ile" },
       { name: "Junior Bravas Parmesan", price: 230 },
       { name: "Peynir Tabağı", price: 550, desc: "Gouda, Edam, Kars Gravyer ve İsli Çerkes Peyniri" },
+
       { name: "Nachos Cheddar", price: 250 },
       { name: "Mücver", price: 350, desc: "Roka, parmesan peyniri ve bravas sos ile (Mevsime göre balkabağından yapıyoruz.)" },
       { name: "Nachos Sloppy", price: 250 },
       { name: "Nachos Sade", price: 200, desc: "Salsa sos ve tartar sos ile servis ediyoruz" },
+
       { name: "Ekstra Cheddar", price: 50 },
       { name: "Zeytin Tabağı", price: 200, desc: "3 çeşit karışık zeytin" },
-      { name: "Tapas Bar", price: 50, desc: "Pintxos seçin (Peçetenizi unutmayın 😅). 2- Pintxos’larınızı alın. 3- Afiyetle yiyin. 4- Kürdanlarınızı atmayın. 5- Biz gelip kürdanlarınızı sayalım. (Her kürdan 50₺)" },
+      { name: "Tapas Bar", price: 50, desc: "1- Tabağınızı seçin (Peçetenizi unutmayın 😅). 2- Pintxos’larınızı alın. 3- Afiyetle yiyin. 4- Kürdanlarınızı atmayın. 5- Biz gelip kürdanlarınızı sayalım. (Her kürdan 50₺)" },
     ]
   },
 
@@ -159,7 +56,229 @@ window.MENU = [
       { name: "Aberlour 12yo", tags: ["Speyside Single Malt Scotch"], price: 570 },
       { name: "Aberlour 14yo", tags: ["Speyside Single Malt Scotch"], price: 750 },
       { name: "Aberlour 18yo", tags: ["Speyside Single Malt Scotch"], price: 1500 },
+
       { name: "Ballantines Bourbon Finish", price: 280 },
+
+      { name: "Chivas 12yo", tags: ["Blended Scotch"], price: 340 },
+      { name: "Chivas 15yo", tags: ["Blended Scotch"], price: 540 },
+      { name: "Chivas 18yo", tags: ["Blended Scotch"], price: 715 },
+      { name: "Monkey Shoulder", tags: ["Blended Scotch"], price: 375 },
+      { name: "Chivas Extra Smoky", tags: ["Blended Scotch"], price: 360 },
+      { name: "Chivas Extra Sherry", tags: ["Blended Scotch"], price: 400 },
+
+      { name: "The Glenlivet Founders Reserve", tags: ["Single Malt Scotch"], price: 400 },
+      { name: "The Glenlivet 12", tags: ["Single Malt Scotch"], price: 500 },
+      { name: "The Glenlivet 15", tags: ["Single Malt Scotch"], price: 800 },
+      { name: "The Glenlivet 18", tags: ["Single Malt Scotch"], price: 1000 },
+
+      { name: "Jameson IPA Edition", tags: ["Irish"], price: 300 },
+      { name: "Jameson Black Barrel", tags: ["Irish"], price: 360 },
+      { name: "Jameson", tags: ["Irish"], price: 300 },
+      { name: "Jameson Stout Edition", tags: ["Irish"], price: 300 },
+
+      { name: "Glenfiddich 15", tags: ["Single Malt Scotch"], price: 875 },
+      { name: "Glenfiddich Fire & Cane", tags: ["Single Malt Scotch"], price: 1000 },
+      { name: "The Balvenie 12yo", tags: ["Single Malt Scotch"], price: 1000 },
+
+      { name: "Macallan 12", tags: ["Highland Single Malt"], price: 1000 },
+
+      { name: "JP Wiser's", tags: ["Canadian Whiskey"], price: 260 },
+      { name: "LOT 40", tags: ["RYE Whiskey"], price: 455 },
+      { name: "Pike Creek", tags: ["Canadian Whiskey"], price: 300 },
+
+      { name: "The Chita", tags: ["Single Malt Scotch"], price: 875 },
+
+      { name: "The Deacon", tags: ["Blended Scotch"], price: 375 },
+
+      { name: "Scapa", tags: ["Single Malt Scotch"], price: 600 },
+
+      { name: "Drambuie", price: 400 },
+
+      { name: "Absolut Elyx Vodka", price: 300 },
+    ]
+  },
+
+  {
+    id: "konyak",
+    titleTR: "Konyak",
+    titleEN: "Cognac",
+    items: [
+      { name: "Martell VSOP", tags: ["Very Superior Old Pale"], price: 720 },
+      { name: "Martell VS", tags: ["Very Special"], price: 550 },
+    ]
+  },
+
+  {
+    id: "tost-gozleme",
+    titleTR: "Tost ve Gözleme",
+    titleEN: "Toast & Gözleme",
+    items: [
+      { name: "Kaşarlı, Sucuklu", price: 250, desc: "Cherry domates, salatalık ve zeytin ile" },
+      { name: "Kaşarlı", price: 250, desc: "Cherry domates, salatalık ve zeytin ile" },
+      { name: "İzmir Tulumlu, Köz Biberli", price: 250, desc: "Cherry domates, salatalık ve zeytin ile" },
+      { name: "Kaşarlı, Domatesli", price: 250, desc: "Cherry domates, salatalık ve zeytin ile" },
+      { name: "Beyaz Peynirli, Domatesli", price: 250, desc: "Cherry domates, salatalık ve zeytin ile" },
+      { name: "Not", price: null, desc: "15.00'e kadar açık.", tags: ["Bilgi"] },
+    ]
+  },
+
+  {
+    id: "penny-kahvalti",
+    titleTR: "Penny Kahvaltı",
+    titleEN: "Penny Breakfast",
+    items: [
+      { name: "Açık Büfe Kahvaltı", price: 700, desc: "Cumartesi ve Pazar" },
+      { name: "Sebzeli Omlet ve Çay", price: 150, desc: "Kapya biber, yeşil biber ve soğan" },
+      { name: "Sıcak Süt", price: 100 },
+      { name: "Kahvaltı Salatası", price: 150, desc: "Domates, salatalık, roka, maydanoz ve iki dilim peynir" },
+      { name: "Bal & Kaymak", price: 100 },
+      { name: "Kasap Sucuk", price: 150 },
+      { name: "Reçel", price: 100 },
+      { name: "Zeytin", price: 100 },
+      { name: "Not", price: null, desc: "Kahvaltılık ürünlerimiz 15.00'e kadar açık.", tags: ["Bilgi"] },
+    ]
+  },
+
+  {
+    id: "kirmizi-sarap",
+    titleTR: "Kırmızı Şarap",
+    titleEN: "Red Wine",
+    items: [
+      { name: "Pamukkale Anfora Shiraz Kadeh", price: 350 },
+      { name: "Pamukkale Anfora Merlot Kadeh", price: 350 },
+      { name: "Pamukkale Anfora Kalecik Karası Kadeh", price: 350 },
+
+      { name: "Pamukkale Anfora Shiraz Şişe", price: 1300 },
+      { name: "Pamukkale Anfora Merlot Şişe", price: 1300 },
+      { name: "Pamukkale Anfora Öküzgözü Şişe", price: 1300 },
+      { name: "Pamukkale Anfora Kalecik Karası Şişe", price: 1300 },
+      { name: "Pamukkale Anfora Cabernet Sauvignon Şişe", price: 1300 },
+
+      { name: "Pamukkale Grand Reserve Shiraz Şişe", price: 2500 },
+      { name: "Suvla Kumkale Merlot Şişe", price: 1500 },
+      { name: "Suvla Sur Şişe", price: 2500, desc: "Merlot, Cabernet Sauvignon, Cabernet franc, Malbec, Petit verdot." },
+
+      { name: "Pamukkale Anfora Trio Şişe", price: 1300, desc: "Shiraz, Kalecik Karası, Cabernet Sauvignon" },
+    ]
+  },
+
+  {
+    id: "blush-rose-beyaz",
+    titleTR: "Blush, Rose, Beyaz, Köpüklü Şarap",
+    titleEN: "Blush, Rosé, White & Sparkling",
+    items: [
+      { name: "Çankaya Kadeh", tags: ["TR"], price: 400 },
+
+      { name: "Pamukkale Anfora Trio Beyaz Kadeh", price: 350, desc: "Chardonnay, Narince, Sauvignon Blanc" },
+      { name: "Pamukkale Anfora Trio Beyaz Şişe", price: 1300, desc: "Chardonnay, Narince, Sauvignon Blanc" },
+
+      { name: "Pamukkale Anfora Trio Rose Kadeh", price: 350, desc: "Shiraz, Kalecik Karası, Cabernet Sauvignon" },
+      { name: "Pamukkale Anfora Trio Rose Şişe", price: 1300, desc: "Shiraz, Kalecik Karası, Cabernet Sauvignon" },
+
+      { name: "Pamukkale Anfora Blush Şişe", price: 1400 },
+      { name: "Suvla Kabatepe Blush Kadeh", price: 350 },
+      { name: "Suvla Kabatepe Blush Şişe", price: 1300 },
+
+      { name: "Pamukkale Anfora Sauvignon Şişe", price: 1400 },
+      { name: "Pamukkale Anfora Chardonnay Şişe", price: 1400 },
+
+      { name: "Mulier Şişe", size: "50 cl", price: 1400 },
+    ]
+  },
+
+  {
+    id: "sicak-sarap-sangria",
+    titleTR: "Sıcak Şarap, Sangria",
+    titleEN: "Hot Wine & Sangria",
+    items: [
+      { name: "Sıcak Şarap", price: 400 },
+      { name: "Sangria Kadeh", price: 400, desc: "Taze meyveler, cin, votka, şarap" },
+    ]
+  },
+
+  {
+    id: "snaps-shots",
+    titleTR: "Snaps & Shots",
+    titleEN: "Snaps & Shots",
+    items: [
+      { name: "Beefeater Pink", price: 165 },
+      { name: "Jagermeister", price: 125 },
+      { name: "Malfy Cin", price: 165 },
+      { name: "Bumbu Dark Rom", price: 165 },
+      { name: "Jagermeister Coldbrew Coffee", price: 125 },
+      { name: "Olmeca Altos Tekila", price: 165 },
+      { name: "Jameson", price: 165 },
+      { name: "Drambuie Shot", price: 180 },
+      { name: "Absolut Blue Votka", price: 165 },
+    ]
+  },
+
+  {
+    id: "sicak-icecekler",
+    titleTR: "Sıcak İçecekler",
+    titleEN: "Hot Drinks",
+    items: [
+      { name: "Americano", price: 100 },
+      { name: "Cappuccino", price: 125 },
+      { name: "Latte", price: 125 },
+
+      { name: "Alkollü Kahve Çeşitleri", price: 250, available: false, desc: "Irish, Baileys, Kahlua" },
+
+      { name: "Çaysky", price: 200, desc: "Jameson, çay" },
+      { name: "Espresso", price: 75 },
+      { name: "Filtre Kahve", price: 90 },
+      { name: "Double Espresso", price: 125 },
+      { name: "Sahlep", price: 125 },
+      { name: "Sıcak Çikolata", price: 125 },
+      { name: "Ihlamur / Adaçayı / Nane çayı", price: 125 },
+      { name: "Mocha", price: 125 },
+    ]
+  },
+
+  {
+    id: "soguk-icecekler",
+    titleTR: "Soğuk İçecekler",
+    titleEN: "Cold Drinks",
+    items: [
+      { name: "Coca Cola, Fanta, Sprite", price: 100 },
+      { name: "Su", price: 25 },
+      { name: "Ev Yapımı Ice Tea", tags: ["Limonlu"], price: 100, desc: "Kendimiz yapıyoruz." },
+      { name: "Taze Meyve Suyu", price: 150, desc: "Mevsim meyveleri, 15.00'e kadar" },
+      { name: "Soğuk Çikolata", price: 125 },
+      { name: "Ice Americano", price: 125 },
+      { name: "Ice Latte", price: 125 },
+      { name: "Soda", tags: ["Sade"], price: 40 },
+
+      { name: "Özerhisar Ayranı", price: 90, available: false },
+
+      { name: "Fuse Tea", tags: ["Şeftali, Limon"], price: 100 },
+    ]
+  },
+
+  {
+    id: "tatlilar",
+    titleTR: "Tatlılar",
+    titleEN: "Desserts",
+    items: [
+      { name: "Sufle", price: 250, desc: "Dondurma ile" },
+    ]
+  },
+
+  {
+    id: "corba",
+    titleTR: "Çorba",
+    titleEN: "Soup",
+    items: [
+      { name: "Günün Çorbası", tags: ["Yayla"], price: 200, available: false },
+    ]
+  },
+
+  {
+    id: "yeni",
+    titleTR: "Yeni",
+    titleEN: "New",
+    items: [
+      // şimdilik boş
     ]
   },
 ];
