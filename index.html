@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Penny Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0ea5e9" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">P</div>
+      <div>
+        <div class="title">Penny Menu</div>
+        <div class="subtitle">Telefon için hızlı menü</div>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button id="langBtn" class="pill" type="button" aria-label="Dil">TR</button>
+      <button id="modeBtn" class="pill" type="button" aria-label="Tema">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="searchRow">
+      <input id="search" class="search" type="search" placeholder="Ara: burger, gin, pad thai..." autocomplete="off" />
+      <button id="clearBtn" class="clearBtn" type="button">Temizle</button>
+    </section>
+
+    <nav id="chips" class="chips" aria-label="Kategoriler"></nav>
+
+    <section class="metaRow">
+      <div id="count" class="count"></div>
+      <div class="hint">💡 Ürüne dokun → detay</div>
+    </section>
+
+    <section id="list" class="list" aria-live="polite"></section>
+  </main>
+
+  <div id="sheetBackdrop" class="sheetBackdrop hidden"></div>
+
+  <section id="sheet" class="sheet hidden" role="dialog" aria-modal="true" aria-label="Ürün detayı">
+    <div class="sheetHandle"></div>
+    <div id="sheetContent"></div>
+    <div class="sheetActions">
+      <button id="closeSheet" class="primaryBtn" type="button">Kapat</button>
+    </div>
+  </section>
+
+  <script src="menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
