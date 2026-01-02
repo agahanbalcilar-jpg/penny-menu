@@ -9,7 +9,6 @@ const state = {
 
 function moneyTRY(v){
   if (typeof v !== "number") return "";
-  // Turkish format: 1.400,00 ₺
   return v.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " ₺";
 }
 
@@ -33,7 +32,7 @@ function matchesQuery(item, q){
     item.name,
     item.desc || "",
     (item.tags || []).join(" "),
-    item.catTitle || ""
+    (item.catTitle || "")
   ].join(" ").toLowerCase();
   return hay.includes(q.toLowerCase());
 }
@@ -108,7 +107,6 @@ function render(){
       ? `${items.length} ürün gösteriliyor`
       : `${items.length} items shown`);
 
-  // Group by category visually
   const groups = new Map();
   for (const it of items){
     if (!groups.has(it.catTitle)) groups.set(it.catTitle, []);
@@ -132,7 +130,10 @@ function render(){
       card.style.width = "100%";
 
       const priceText = (typeof item.price === "number") ? moneyTRY(item.price) : "";
-      const sizeText = item.size || (item.available === false ? (state.lang==="TR"?"Mevcut değil":"Unavailable") : "");
+      const fallbackLine =
+        item.available === false
+          ? (state.lang==="TR" ? "Mevcut değil" : "Unavailable")
+          : (item.size || "");
 
       card.innerHTML = `
         <div class="badge">
@@ -141,7 +142,10 @@ function render(){
         </div>
         <div class="body">
           <div class="name">${item.name}</div>
-          ${item.desc ? `<div class="desc">${item.desc}</div>` : `<div class="desc">${sizeText}</div>`}
+          ${item.desc
+            ? `<div class="desc">${item.desc}</div>`
+            : (fallbackLine ? `<div class="desc">${fallbackLine}</div>` : ``)
+          }
           ${item.tags?.length ? `<div class="tags">${item.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>` : ""}
         </div>
       `;
@@ -153,7 +157,6 @@ function render(){
 }
 
 function init(){
-  // Theme
   document.documentElement.dataset.theme = state.theme;
 
   $("#modeBtn").onclick = () => {
@@ -162,14 +165,12 @@ function init(){
     $("#modeBtn").textContent = state.theme === "dark" ? "🌙" : "☀️";
   };
 
-  // Language
   $("#langBtn").onclick = () => {
     state.lang = (state.lang === "TR") ? "EN" : "TR";
     $("#langBtn").textContent = state.lang;
     render();
   };
 
-  // Search
   $("#search").addEventListener("input", (e) => {
     state.q = e.target.value.trim();
     render();
@@ -181,7 +182,6 @@ function init(){
     render();
   };
 
-  // Sheet close
   $("#closeSheet").onclick = closeSheet;
   $("#sheetBackdrop").onclick = closeSheet;
 
